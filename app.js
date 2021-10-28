@@ -15,10 +15,10 @@ if (navigator.geolocation) {
     const proxy = "https://cors-anywhere.herokuapp.com/";
     const api = `${proxy}https://api.darksky.net/forecast/fd9d9c6418c23d94745b836767721ad1/${lat}, ${long}`;
 
+    console.log(api);
     fetch(api)
       .then((response) => response.json())
       .then((data) => {
-        console.log(data);
         const { temperature, summary, icon } = data.currently;
 
         tempDeg.textContent = temperature.toFixed();
@@ -41,10 +41,9 @@ if (navigator.geolocation) {
   });
 } else console.log("error");
 
-
 function setIcons(icon, iconID) {
   const skycons = new Skycons({
-    color: "#fff"
+    color: "#fff",
   });
   const curIcon = icon.replace(/-/g, "_").toUpperCase();
   skycons.play();

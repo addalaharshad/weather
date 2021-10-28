@@ -1,16 +1,26 @@
-<link rel="stylesheet" type="text/css" href="style.css">
-<h1><i><u>harshus weather update</u></i><h1>
-<div class="location">
-  <h2 class="location-timezone">Timezone</h2>
-  <canvas width="128" height="128"></canvas>
-
-</div>
-<div class="temperature">
-  <div class="temperature-section">
-    <h3 class="temperature-degree">0</h3>
-    <span>F</span>
-  </div>
-  <div class="temperature-description">Weather Description</div>
-</div>
-<script src="app.js" type="text/javascript"></script>
-<script src="https://rawgithub.com/darkskyapp/skycons/master/skycons.js"></script>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="shortcut icon" href="./weather.png" />
+    <title>harshus weather update</title>
+  </head>
+  <body>
+    <img src="./weather.png" class="logo" />
+    <h1>
+      <div class="temperature">
+        <div class="temperature-section">
+          <h3 class="temperature-degree">0</h3>
+          <span>F</span>
+        </div>
+        <div class="temperature-description">Weather Description</div>
+      </div>
+    </h1>
+    <div class="location">
+      <h2 class="location-timezone">Timezone</h2>
+      <canvas width="128" height="128" />
+    </div>
+    <script src="https://rawgithub.com/darkskyapp/skycons/master/skycons.js"></script>
+    <script src="app.js" type="text/javascript"></script>
+  </body>
+</html>

@@ -4,7 +4,6 @@
   box-sizing: border-box;
 }
 
-
 body {
   height: 100vh;
   display: flex;
@@ -16,13 +15,23 @@ body {
   color: #fff;
 }
 
+.logo {
+  width: 90px;
+  height: 90px;
+  margin: 15px 0;
+}
+
 .location,
 .temperature {
   height: 30vh;
-  width: 50%;
   display: flex;
   justify-content: space-around;
   align-items: center;
+  flex-direction: column;
+}
+
+.temperature-description {
+  font-size: 40px;
 }
 
 .temperature {
@@ -43,4 +52,14 @@ body {
 .temperature-section h2 {
   font-size: 40px;
   user-select: none;
+}
+
+.temperature-section:hover {
+  color: orange;
+}
+
+@media (max-width: 600px) {
+  .temperature-description {
+    font-size: 24px;
+  }
 }
